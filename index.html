@@ -4,8 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .flex-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 500px;
+            background-color: #fafafa;
+        }
+        .inner-flex{
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+        }
+
+        .trans-box{
+            border: 1px solid red;
+            width: 500px;
+            height: 500px;
+            background-color: #fafafa;
+        }
+        .inner-trans{
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            margin-top: 50%;
+            margin-left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .p-box{
+            position: relative;
+            border: 1px solid red;
+            width: 500px;
+            height: 500px;
+            background-color: #fafafa;
+        }
+        .inner-p{
+            position: absolute;
+            margin-left: 50%;
+            margin-top: 50%;
+            left: -100px;
+            top: -100px;
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            
+        }
+
+    </style>
 </head>
 <body>
-    <h3>hello, my name is damimi</h3>
+    <p>flex 居中</p>
+    <div class="flex-box">
+        <div class="inner-flex"></div>
+    </div>
+    <p> transform 居中</p>
+    <div class="trans-box">
+        <div class="inner-trans"></div>
+    </div>
+
+
+    <p>绝对定位 居中</p>
+    <div class="p-box">
+        <div class="inner-p"></div>
+    </div>
 </body>
 </html>
